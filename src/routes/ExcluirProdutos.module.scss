@@ -1,4 +1,4 @@
-// Mixin para botões
+// Estilizar botões com Mixin
 @mixin button-style($bg-color, $hover-color) {
     display: block;
     width: 20%;
@@ -12,35 +12,42 @@
     border-radius: 5px;
     background-color: $bg-color;
 
+    // Estilo ao passar cursor do mouse sobre o botão
     &:hover {
         background-color: $hover-color;
     }
 }
 
+// Estilo "Cartão"
 .card {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
 
+//Estilo "Título Cartão"
     h2 {
         text-align: center;
     }
 
+    // Estilo "Figura do Cartão"
     figure {
         margin: 0 auto;
         border: 2px solid #e1e1e1;
         padding: 10px;
 
+        // Estilo "Imagem da Figura"
         img {
             display: block;
             margin: 0 auto;
 
+            // Estilo ao passar o cursor do mouse sobre a imagem
             &:hover {
                 width: 30%;
                 position: fixed;
             }
         }
 
+        // Estilo "Legenda da Figura"
         figcaption {
             margin: 20px 0;
             font-weight: bold;
@@ -48,12 +55,17 @@
     }
 }
 
+// Estilo "Botão"
 .btn {
+    // Estilo "Primeiro Botão"
     button:first-child {
         @include button-style(#ff0000, #880f0f);
     }
 
+    // Estilo "Último Botão"
     button:last-child {
+
+        // Aplica o Mixin button-style com as cores escolhidas
         @include button-style(#148214, #0b3d0b);
     }
 }
