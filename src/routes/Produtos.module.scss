@@ -1,3 +1,9 @@
+// Mixin para estilizar células de tabela
+@mixin table-cell-style($text-align) {
+    border: 2px solid #e1e1e1;
+    text-align: $text-align;
+}
+
 .estilo {
     border-collapse: collapse;
     border: 2px solid #ccc;
@@ -23,14 +29,14 @@
         }
 
         td {
-            border: 2px solid #e1e1e1;
+            @include table-cell-style(left);
 
             &:first-child {
-                text-align: center;
+                @include table-cell-style(center);
             }
 
             &:last-child {
-                text-align: center;
+                @include table-cell-style(center);
             }
 
             img {
