@@ -1,0 +1,59 @@
+// Mixin para botões
+@mixin button-style($bg-color, $hover-color) {
+    display: block;
+    width: 20%;
+    height: 40px;
+    margin: 1% auto;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: $bg-color;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+
+    h2 {
+        text-align: center;
+    }
+
+    figure {
+        margin: 0 auto;
+        border: 2px solid #e1e1e1;
+        padding: 10px;
+
+        img {
+            display: block;
+            margin: 0 auto;
+
+            &:hover {
+                width: 30%;
+                position: fixed;
+            }
+        }
+
+        figcaption {
+            margin: 20px 0;
+            font-weight: bold;
+        }
+    }
+}
+
+.btn {
+    button:first-child {
+        @include button-style(#ff0000, #880f0f);
+    }
+
+    button:last-child {
+        @include button-style(#148214, #0b3d0b);
+    }
+}

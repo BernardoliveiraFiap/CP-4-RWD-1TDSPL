@@ -1,0 +1,53 @@
+// Mixin para estilizar células de tabela
+@mixin table-cell-style($text-align) {
+    border: 2px solid #e1e1e1;
+    text-align: $text-align;
+}
+
+.estilo {
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .tableHeaders {
+        text-align: center;
+        background-color: #565553;
+        color: #fff;
+
+        th {
+            border: 2px solid #ccc;
+        }
+    }
+
+    .tableLine {
+        background-color: #ccc;
+
+        &:hover {
+            background-color: #565553;
+            color: #fff;
+        }
+
+        td {
+            @include table-cell-style(left);
+
+            &:first-child {
+                @include table-cell-style(center);
+            }
+
+            &:last-child {
+                @include table-cell-style(center);
+            }
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    .tableFooter {
+        text-align: center;
+        background-color: #565553;
+        color: #fff;
+    }
+}
