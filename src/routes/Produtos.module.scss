@@ -1,50 +1,66 @@
-// Mixin para estilizar células de tabela
+// Mixin da estilização das células de tabela
 @mixin table-cell-style($text-align) {
     border: 2px solid #e1e1e1;
     text-align: $text-align;
 }
 
+// Estilo Principal da Tabela
 .estilo {
     border-collapse: collapse;
     border: 2px solid #ccc;
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+    // Estilo "Cabeçalhos da Tabela"
     .tableHeaders {
         text-align: center;
         background-color: #565553;
         color: #fff;
 
+        // Estilo "Células do Cabeçalho"
         th {
             border: 2px solid #ccc;
         }
     }
 
+    // Estilo "Linhas da Tabela"
     .tableLine {
         background-color: #ccc;
 
+        // Estilo ao passar o cursor do mouse sobre a linha
         &:hover {
             background-color: #565553;
             color: #fff;
         }
 
+        // Estilo "Células da Linha"
         td {
+
+            // Aplicação do Mixin table-cell-style com Alinhamento à Esquerda
             @include table-cell-style(left);
 
+            // Estilo "Primeira Célula da Linha"
             &:first-child {
+
+                // Aplicação do Mixin table-cell-style com Alinhamento ao Centro
                 @include table-cell-style(center);
             }
 
+            // Estilo "Última Célula da Linha"
             &:last-child {
+
+                // Aplicação do Mixin table-cell-style com Alinhamento ao Centro
                 @include table-cell-style(center);
             }
 
+            // Estilo "Imagens Dentro das Células"
             img {
                 width: 100px;
             }
         }
     }
 
+    // Estilo "Rodapé da Tabela"
     .tableFooter {
         text-align: center;
         background-color: #565553;
