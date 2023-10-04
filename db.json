@@ -1,13 +1,6 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "nome": "Teclado",
-      "desc": "Mecânico",
-      "preco": 150,
-      "img": "https://picsum.photos/100/100"
-    },
-    {
       "id": 2,
       "nome": "Mouse",
       "desc": "Óptico",
@@ -50,13 +43,6 @@
       "img": "https://http2.mlstatic.com/D_NQ_NP_2X_664279-MLA51423827157_092022-F.webp"
     },
     {
-      "id": 8,
-      "nome": "Controle Remoto",
-      "desc": "Controle Universal Samsung",
-      "preco": "120",
-      "img": "https://www.eletronicafaria.com.br/2926-large_default/controle-remoto-tv-lcdled-samsung-aa59-00463a-aa59-00469a-aa59-00515a-aa59-00511a-confira-os-modelos.jpg"
-    },
-    {
       "id": 9,
       "nome": "Carregador Universal Indução",
       "desc": "Carregador Duplo de Indução",
@@ -83,13 +69,6 @@
       "desc": "Smart Watch Samsung",
       "preco": "1200",
       "img": "https://a-static.mlcdn.com.br/450x450/smartwatch-samsung-galaxy-watch5-bt-44mm-prata-16gb-bluetooth/magazineluiza/235690400/bfd4156080d75bb84ed605cbd7002cf1.jpg"
-    },
-    {
-      "id": 13,
-      "nome": "Caixa de Som",
-      "desc": "Edifier",
-      "preco": "2000",
-      "img": "https://images.kabum.com.br/produtos/fotos/30158/30158_index_gg.jpg"
     }
   ]
 }
