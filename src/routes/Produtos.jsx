@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import classes from "./Produtos.module.css";
+import classes from "./Produtos.module.scss";
 import { AiFillEdit as Editar } from "react-icons/ai";
 import { RiDeleteBin2Fill as Excluir } from "react-icons/ri";
 import { useEffect, useState } from "react";

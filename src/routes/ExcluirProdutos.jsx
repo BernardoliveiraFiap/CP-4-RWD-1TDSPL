@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import style from "./ExcluirProdutos.module.css";
+import style from "./ExcluirProdutos.module.scss";
 import { useEffect, useState } from "react";
 
 export default function ExcluirProdutos() {
